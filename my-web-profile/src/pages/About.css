@@ -1,0 +1,39 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+}
+
+.resume-section {
+    flex: 3;
+    /* This section will take up 3/4 of the page width */
+}
+
+.skills-section {
+    flex: 1;
+    /* This section will take up 1/4 of the page width */
+}
+
+.resume-iframe {
+    width: 100%;
+    height: 500px;
+    /* Adjust this value based on how much of the PDF you want to show */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
