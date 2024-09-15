@@ -21,20 +21,22 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="projects-container">
-      <h1>My Projects</h1>
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <div className="project-card" key={project.title}> 
-            {/* <img src={project.imgSrc} alt={project.title} className="project-image" /> */}
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <p><strong>Tech Stack:</strong> {project.techStack}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-          </div>
-        ))}
+    <body>
+      <div className="projects-container">
+        <h1>My Projects</h1>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <div className="project-card" key={project.title}>
+              {/* <img src={project.imgSrc} alt={project.title} className="project-image" /> */}
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <p><strong>Tech Stack:</strong> {project.techStack}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </body>
   );
 };
 
