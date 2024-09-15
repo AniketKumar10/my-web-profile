@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "aos": "^2.3.4",
+    "react-pdf": "^9.1.0",
     "typewriter-effect": "^2.21.0"
   }
 }
