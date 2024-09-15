@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+.contact-container h1{
+    color:#ddd
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
