@@ -6,6 +6,12 @@
     gap: 20px;
 }
 
+.resume-section h2{
+    color: #c4c3c3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .resume-section {
     flex: 3;
     /* This section will take up 3/4 of the page width */
