@@ -46,7 +46,8 @@ body {
 
 .project-card h3 {
     margin-top: 15px;
-    color:#c4c3c3;
+/* Suggested code may be subject to a license. Learn more: ~LicenseLog:3668556142. */
+    color:purple;
 }
 
 .project-card p {
