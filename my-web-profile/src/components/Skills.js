@@ -3,10 +3,13 @@ import './Skills.css';
 
 const Skills = () => {
   const skills = [
-    { name: "HTML", level: "90%" },
-    { name: "CSS", level: "85%" },
-    { name: "JavaScript", level: "80%" },
-    { name: "React", level: "75%" },
+    { name: "HTML/CSS", level: "90%" },
+    { name: "JS/React", level: "75%" },
+    { name: "C/C++", level: "60%" },
+    { name: "Python", level: "80%" },
+    { name: "Java", level: "50%" },
+    { name: "SQL", level: "80%"},
+    { name: "Google Cloud", level: "70%"}
   ];
 
   return (
