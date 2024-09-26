@@ -6,7 +6,7 @@
     gap: 20px;
 }
 
-.resume-section h2{
+.resume-section h2 {
     color: #c4c3c3;
     text-align: center;
     margin-bottom: 30px;
@@ -46,11 +46,16 @@
 
 @media (max-width: 768px) {
     .about-container {
-      flex-direction: column; /* Stack vertically on smaller screens */
+        flex-direction: column;
+        /* Stack vertically on smaller screens */
     }
-    .resume-section, .skills-section {
+
+    .resume-section,
+    .skills-section {
         align-content: center;
-      flex: none; /* Remove flex property for stacking */
-      width: 100%; /* Ensure full width */
+        flex: none;
+        /* Remove flex property for stacking */
+        width: 100%;
+        /* Ensure full width */
     }
-  }
+}

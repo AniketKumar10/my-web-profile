@@ -1,18 +1,17 @@
-
 import React, { useState, useEffect } from "react";
 import './Footer.css';
 
 const Footer = () => {
 
-  const [showFooter, setShowFooter] = useState(false); 
+  const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 300) { 
+      if (window.pageYOffset > 300) {
         setShowFooter(true);
       } else {
         setShowFooter(
-false);
+          false);
       }
     };
 

@@ -8,8 +8,8 @@ const Skills = () => {
     { name: "C/C++", level: "60%" },
     { name: "Python", level: "80%" },
     { name: "Java", level: "50%" },
-    { name: "SQL", level: "80%"},
-    { name: "Google Cloud", level: "70%"}
+    { name: "SQL", level: "80%" },
+    { name: "Google Cloud", level: "70%" }
   ];
 
   return (

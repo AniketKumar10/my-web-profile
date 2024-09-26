@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -10,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 const uri = process.env.MONGODB_URI;
 
-mongoose.connect(uri, { 
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -20,7 +19,7 @@ connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 });
 
-const Contact = require('./models/contact.model'); 
+const Contact = require('./models/contact.model');
 
 const corsOptions = {
     origin: 'http://localhost:3000', // Replace with your frontend URL 

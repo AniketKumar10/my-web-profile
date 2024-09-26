@@ -1,11 +1,12 @@
 body {
-    background-color: #121212; /* Use the same color as .projects-container */
+    background-color: #121212;
+    /* Use the same color as .projects-container */
 }
 
 .projects-container {
     max-width: 100%;
     max-height: 100%;
-    padding: 40px; 
+    padding: 40px;
 }
 
 .projects-grid {
@@ -30,9 +31,9 @@ body {
     transform: translateY(-10px);
 }
 
-.project-card:hover { 
+.project-card:hover {
     box-shadow: 0 0 10px #ffffff, 0 0 40px #b700ff;
-  }
+}
 
 .project-image {
     width: 100%;
@@ -40,18 +41,18 @@ body {
     border-radius: 5px;
 }
 
-.projects-container h1{
-    color:#c4c3c3
+.projects-container h1 {
+    color: #c4c3c3
 }
 
 .project-card h3 {
     margin-top: 15px;
-/* Suggested code may be subject to a license. Learn more: ~LicenseLog:3668556142. */
-    color:purple;
+    /* Suggested code may be subject to a license. Learn more: ~LicenseLog:3668556142. */
+    color: purple;
 }
 
 .project-card p {
-    color:#dcdada
+    color: #dcdada
 }
 
 .project-card a {

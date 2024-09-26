@@ -18,16 +18,16 @@ const projects = [
   },
   {
     title: "Trip Cost Estimator",
-    description : "From the dataset extracted, an BI page was generated for the user(org.) to view data better in graphical ways",
+    description: "From the dataset extracted, an BI page was generated for the user(org.) to view data better in graphical ways",
     techStack: "AWS, GCP, LookerStudio, Python, Jupyternotebook",
     link: "https://lookerstudio.google.com/s/tlJl_3jgv6I",
     //imgSrc: "path-to-image", // Optional project image
   },
   {
-    title:"DeadLine Detector",
-    description:"The project was build based on an OCR system and ML/AI that reads documents and creates essential reminders accordingly",
-    techStack:"NanoNets, ML, AI",
-    link:""
+    title: "DeadLine Detector",
+    description: "The project was build based on an OCR system and ML/AI that reads documents and creates essential reminders accordingly",
+    techStack: "NanoNets, ML, AI",
+    link: ""
   }
   // Add more projects
 ];
