@@ -1,3 +1,4 @@
+require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -7,7 +8,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 5000;
 
-const uri = "mongodb+srv://AniketKumar:E275UpRJPrtWNnKh@my-web-profile.5948b.mongodb.net/?retryWrites=true&w=majority&appName=my-web-profile"; // Replace with your actual connection string
+const uri = process.env.MONGODB_URI;
+
 mongoose.connect(uri, { 
     useNewUrlParser: true,
     useUnifiedTopology: true
