@@ -43,3 +43,14 @@
 .download-button:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+    .resume-section, .skills-section {
+        align-content: center;
+      flex: none; /* Remove flex property for stacking */
+      width: 100%; /* Ensure full width */
+    }
+  }

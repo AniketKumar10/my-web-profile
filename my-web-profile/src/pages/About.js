@@ -5,6 +5,9 @@ import './About.css';
 const About = () => {
   return (
     <div className="about-container">
+      <div className="skills-section">
+        <Skills /> 
+      </div>
       <div className="resume-section">
         <h2>My Resume</h2>
         {/* Use a PDF viewer library like react-pdf */}
@@ -14,9 +17,6 @@ const About = () => {
           <p>Alternative text - include a link to download the PDF, or a message indicating the PDF cannot be displayed.</p>
         </object>
         <a href="/Resume.pdf" download className="download-button">Download Full Resume</a>
-      </div>
-      <div className="skills-section">
-        <Skills /> 
       </div>
     </div>
   );
