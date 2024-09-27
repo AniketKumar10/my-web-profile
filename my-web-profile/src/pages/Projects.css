@@ -1,6 +1,5 @@
 body {
-    background-color: #121212;
-    /* Use the same color as .projects-container */
+    background-color: #121212; /* Use the same color as .projects-container */
 }
 
 .projects-container {
@@ -29,10 +28,32 @@ body {
 
 .project-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 0 10px #ffffff, 0 0 40px #b700ff;
+    animation: highlightAnimation 8s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
 }
 
-.project-card:hover {
-    box-shadow: 0 0 10px #ffffff, 0 0 40px #b700ff;
+.project-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: inherit;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, #007cf0, #00dfd8, #ff0080, #007cf0);
+    background-size: 400% 100%;
+    z-index: -1;
+    animation: backgroundAnim 8s ease-in-out infinite;
+}
+
+@keyframes backgroundAnim {
+    50% {
+        background-position: 140% 50%;
+        transform: skew(-2deg);
+    }
 }
 
 .project-image {
@@ -47,8 +68,7 @@ body {
 
 .project-card h3 {
     margin-top: 15px;
-    /* Suggested code may be subject to a license. Learn more: ~LicenseLog:3668556142. */
-    color: purple;
+    color: #f3f3f3;
 }
 
 .project-card p {
