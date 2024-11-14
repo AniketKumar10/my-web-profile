@@ -1,61 +1,126 @@
 .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.resume-section h2 {
-    color: #c4c3c3;
-    text-align: center;
-    margin-bottom: 30px;
+.resume-certificates-row {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.certificates-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.certificate-card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 6px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
 }
 
 .resume-section {
-    flex: 3;
-    /* This section will take up 3/4 of the page width */
+  flex: 1;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.skills-section {
-    flex: 1;
-    /* This section will take up 1/4 of the page width */
+h2 {
+  color: #c4c3c3;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .resume-iframe {
-    width: 100%;
-    height: 500px;
-    /* Adjust this value based on how much of the PDF you want to show */
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .download-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  width: 50%;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.2s;
 }
 
 .download-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        /* Stack vertically on smaller screens */
-    }
+  .resume-certificates-row {
+    flex-direction: column;
+  }
 
-    .resume-section,
-    .skills-section {
-        align-content: center;
-        flex: none;
-        /* Remove flex property for stacking */
-        width: 100%;
-        /* Ensure full width */
-    }
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-section,
+  .certificates-section {
+    width: 100%;
+  }
+}
+
+.skills-section {
+  width: 100%;
+  min-height: 300px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Remove any display or positioning styles that might interfere */
+}
+
+
+
+.tag-cloud {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-cloud > span {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tag-cloud > span:hover {
+  color: #007bff !important;
+  transform: scale(1.2);
 }
