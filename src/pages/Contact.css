@@ -8,6 +8,22 @@
     color: #ddd
 }
 
+.contact-text{
+    padding-bottom: 10px;
+}
+
+.inconvineance-text{
+    padding-top: 30px;
+}
+
+.email-id,.thank-u{
+    padding-top: 10px;
+}
+
+.thank-u,.email-id,.inconvineance-text{
+    text-align: center;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;

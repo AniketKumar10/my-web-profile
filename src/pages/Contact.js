@@ -37,8 +37,8 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
-            <h1>Contact Me</h1>
-            <form onSubmit={handleSubmit} className="contact-form">
+            <h1 className='contact-text'>Contact Me</h1>
+            <form onSubmit={handleSubmit} className="contact-form ">
                 <input
                     type="text"
                     name="name"
@@ -65,6 +65,9 @@ const Contact = () => {
                 <button type="submit">Send Message</button>
             </form>
             {submitted && <p className="success-message">Thank you! I'll get back to you soon.</p>}
+            <h1 className='inconvineance-text'>For the purposes of simplicity the contact form is unavailable for now still you can contact me through my email at </h1>
+            <h1 className='email-id'>sendtoaniket@icloud.com</h1>
+            <h1 className='thank-u'>Thank you</h1>
         </div>
     );
 };
