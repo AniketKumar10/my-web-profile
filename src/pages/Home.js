@@ -6,10 +6,10 @@ import 'aos/dist/aos.css';
 import Companies from '../components/company-card';
 
 const TYPEWRITER_STRINGS = [
-  'Hi, I\'m Aniket Kumar', 
-  'A passionate developer',
-  'Tech Enthusiast',
-  'Problem Solver'
+  'Hi, I\'m Aniket Kumar ', 
+  'A passionate developer ',
+  'Tech Enthusiast ',
+  'Problem Solver '
 ];
 
 const Home = () => {
@@ -49,21 +49,21 @@ const Home = () => {
           </h1>
           
           <p>Welcome to my personal portfolio website 📝</p>
-          
-          <div className="cta-buttons">
-            <a href="#projects" className="btn btn-primary">View Projects</a>
-            <a href="#contact" className="btn btn-secondary">Contact Me</a>
-          </div>
         </div>
       </section>
 
       {/* About Me Section */}
       <section className="about" id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-          I am a passionate developer with experience in building web applications.
-          I love learning new technologies and solving complex problems.
-        </p>
+        <div className="about-content">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate developer with experience in building web applications.
+            I love learning new technologies and solving complex problems.
+            My expertise spans across various programming languages and frameworks,
+            with a strong focus on creating innovative and efficient solutions.
+          </p>
+          <a href="/about" className="btn btn-primary">Know More</a> {/* Link to the About page */}
+        </div>
       </section>
 
        {/* Companies Section */}
