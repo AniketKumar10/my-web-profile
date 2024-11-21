@@ -1,29 +1,62 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('/');
+  const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleClick = (to) => {
-    setActiveLink(to);
+  const navItems = [
+    { path: '/', label: 'Home' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/about', label: 'About' },
+    { path: '/contact', label: 'Contact' }
+  ];
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
-    <nav className="navbar">
-      <ul className="nav-list">
-        <li className={`nav-item ${activeLink === '/' ? 'active' : ''}`}>
-          <Link to="/" onClick={() => handleClick('/')}>Home</Link>
-        </li>
-        <li className={`nav-item ${activeLink === '/projects' ? 'active' : ''}`}>
-          <Link to="/projects" onClick={() => handleClick('/projects')}>Projects</Link>
-        </li>
-        <li className={`nav-item ${activeLink === '/about' ? 'active' : ''}`}>
-          <Link to="/about" onClick={() => handleClick('/about')}>About</Link>
-        </li>
-        <li className={`nav-item ${activeLink === '/contact' ? 'active' : ''}`}>
-          <Link to="/contact" onClick={() => handleClick('/contact')}>Contact</Link>
-        </li>
+    <nav 
+      className="navbar" 
+      aria-label="Main Navigation"
+    >
+      {/* Mobile Menu Toggle */}
+      <button 
+        className="navbar-toggle" 
+        onClick={toggleMobileMenu}
+        aria-expanded={isMobileMenuOpen}
+        aria-label="Toggle navigation menu"
+      >
+        {isMobileMenuOpen ? '✕' : '☰'}
+      </button>
+
+      {/* Navigation Menu */}
+      <ul 
+        className={`nav-list ${isMobileMenuOpen ? 'mobile-open' : ''}`}
+        aria-label="Navigation Menu"
+      >
+        {navItems.map(({ path, label }) => (
+          <li 
+            key={path} 
+            className={`nav-item ${location.pathname === path ? 'active' : ''}`}
+            role="menuitem"
+          >
+            <Link 
+              to={path} 
+              className="nav-link"
+              aria-current={location.pathname === path ? 'page' : undefined}
+              onClick={closeMobileMenu}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
