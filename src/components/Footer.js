@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     showFooter && (
       <footer className="footer"> {/* Add the CSS class */}
-        <p>&copy; {new Date().getFullYear()} I, Aniket Kumar has all rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} I, Aniket Kumar have all rights reserved.</p>
       </footer>
     )
   );
