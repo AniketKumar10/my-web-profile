@@ -3,39 +3,99 @@ import './Home.css';
 import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Companies from '../components/company-card';
+
+const TYPEWRITER_STRINGS = [
+  'Hi, I\'m Aniket Kumar', 
+  'A passionate developer',
+  'Tech Enthusiast',
+  'Problem Solver'
+];
 
 const Home = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with custom duration
+    AOS.init({ 
+      duration: 1000, 
+      once: true
+    });
   }, []);
 
   return (
     <div className="home-container">
-      {/* Hero Section with AOS Fade-In Effect */}
-      <section className="hero" data-aos="fade-up">
-        <h1>
-          <Typewriter
-            options={{
-              strings: ['Hi, I\'m Aniket Kumar', 'A passionate developer'],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </h1>
-        <p>Welcome to my personal portfolio website!</p>
+      <section 
+        className="hero" 
+        data-aos="fade-up"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(18, 18, 18, 0.9) 50%, rgba(18, 18, 18, 0.5)), 
+            url('/profile-photo.jpg')
+          `,
+          backgroundPosition: 'right center',
+          backgroundSize: 'cover, contain',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="hero-content">
+          <h1>
+            <Typewriter
+              options={{
+                strings: TYPEWRITER_STRINGS,
+                autoStart: true,
+                loop: true,
+                delay: 100,
+                deleteSpeed: 50
+              }}
+            />
+          </h1>
+          
+          <p>Welcome to my personal portfolio website 📝</p>
+          
+          <div className="cta-buttons">
+            <a href="#projects" className="btn btn-primary">View Projects</a>
+            <a href="#contact" className="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
       </section>
 
-      {/* Intro Section with AOS Fade-In Effect */}
-      <section className="intro" data-aos="fade-up">
-        <p>I am currently pursuing B.Tech CSE with experience in Data Science and Machine Learning.</p>
-        <p>I also have hands-on experience with Software Development like this web-portfolio and Network engineering.</p>
-        <p>Check out my projects, blog, and feel free to contact me!</p>
+      {/* About Me Section */}
+      <section className="about" id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate developer with experience in building web applications.
+          I love learning new technologies and solving complex problems.
+        </p>
       </section>
 
-      {/* Placeholder for future content */}
-      <section className="more-section" data-aos="fade-up">
-        <h2>More Content Coming Soon</h2>
-        <p>This is where you can add future sections like projects, blog, etc.</p>
+       {/* Companies Section */}
+      <section className="companies" id="companies" data-aos="fade-up">
+        <h2>Companies I've Worked With</h2>
+        <Companies />
+      </section>
+
+      {/* Projects Section */}
+      <section className="projects" id="projects" data-aos="fade-up">
+        <h2>My Projects</h2>
+        <div className="project-list">
+          <div className="project-item">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+          </div>
+          <div className="project-item">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+          </div>
+          <div className="project-item">
+            <h3>Project 3</h3>
+            <p>Description of project 3.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact" id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <a href="mailto:your-email@example.com" className="btn btn-primary">Email Me</a>
       </section>
     </div>
   );
