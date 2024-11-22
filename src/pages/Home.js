@@ -68,7 +68,7 @@ const Home = () => {
 
        {/* Companies Section */}
       <section className="companies" id="companies" data-aos="fade-up">
-        <h2>Companies I've Worked With</h2>
+        <h2>Experienced with the following tools</h2>
         <Companies />
       </section>
 
