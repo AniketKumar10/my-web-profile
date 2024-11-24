@@ -50,7 +50,6 @@
   display: inline-block;
 }
 
-
 .btn:hover {
   opacity: 0.8;
 }
@@ -60,9 +59,8 @@
   color: #ffffff;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Vertically center the content */
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('/public/cse-building.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/cse-building.jpg");
   background-position: left center;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -123,7 +121,7 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  gap:  20px; /* Space between project items */
+  gap: 20px; /* Space between project items */
 }
 
 .project-item {
@@ -134,7 +132,11 @@
 
 .contact {
   padding: 60px 10%; /* Add padding for spacing */
-  background-color: hsl(270, 50%, 15%); /* Slightly lighter deep purple for contrast */
+  background-color: hsl(
+    270,
+    50%,
+    15%
+  ); /* Slightly lighter deep purple for contrast */
   color: #ffffff; /* White text for readability */
   text-align: center; /* Center align text */
 }
@@ -147,6 +149,22 @@
 .contact p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-btn {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: rgba(81, 80, 80, 0.311);
 }
 
 @media (max-width: 768px) {
@@ -168,7 +186,10 @@
     gap: 15px;
   }
 
-  .about, .companies, .projects, .contact {
+  .about,
+  .companies,
+  .projects,
+  .contact {
     padding: 40px 5%; /* Adjust padding for smaller screens */
   }
 }
