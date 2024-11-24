@@ -21,7 +21,7 @@ const projects = [
     title: "Trip Cost Estimator",
     description: "From the dataset extracted, an BI page was generated for the user(org.) to view data better in graphical ways",
     techStack: "AWS, GCP, LookerStudio, Python, Jupyternotebook",
-    link: "https://lookerstudio.google.com/s/tlJl_3jgv6I",
+    link: "https://lookerstudio.google.com/reporting/e14ca3cd-5255-4051-9c49-0e19d35e7690/page/Th9tD",
     //imgSrc: "path-to-image", // Optional project image
   },
   {
