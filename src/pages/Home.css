@@ -31,6 +31,10 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.hero h3{
+  color: yellow;
+}
+
 .hero p {
   font-size: clamp(1rem, 3vw, 1.5rem);
   color: #c4c3c3;

@@ -49,7 +49,8 @@ const Home = () => {
           </h1>
 
           <p>Welcome to my personal portfolio website 📝</p>
-        </div>
+          <h3 className="sorry-warning">This website is currently under development, so I apologize in advance if it does not meet your expectations.</h3>
+          </div>
       </section>
 
       {/* About Me Section */}
