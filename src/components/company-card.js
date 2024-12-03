@@ -4,30 +4,25 @@ import GCPLogo from '../assets/GCP.svg'; // Use relative path from components fo
 import python from '../assets/python.svg';
 import aws from '../assets/aws.svg';
 import nextjs from '../assets/nextjs.svg';
+import nodejs from '../assets/nodejs.svg';
 
 const CompaniesContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap; // Allows items to wrap to the next line if necessary
+  justify-content: center; // Center the items horizontally
   margin-top: 40px;
-`;
-
-const CompanyCard = styled.div`
-  width: calc(25% - 20px);
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
+  padding: 0 20px; // Add padding to the container
 `;
 
 const CompanyLogo = styled.img`
-  width: 100px;
+  width: 80px; // Set a consistent width for all logos
   height: auto;
-  margin-bottom: 10px;
-`;
+  margin: 40px; // Add margin between logos
+  transition: transform 0.2s; // Smooth transition for hover effects
 
-const CompanyName = styled.h3`
-  margin-bottom: 5px;
+  &:hover {
+    transform: scale(1.1); // Slightly enlarge logo on hover
+  }
 `;
 
 const Companies = () => {
@@ -45,17 +40,19 @@ const Companies = () => {
       logo: aws,
     },
     {
-      name: "nextjs",
+      name: "Next.js",
       logo: nextjs,
+    },
+    {
+      name: "Node.js",
+      logo: nodejs,
     },
   ];
 
   return (
     <CompaniesContainer>
       {companies.map((company, index) => (
-        <CompanyCard key={index}>
-          <CompanyLogo src={company.logo} alt={company.name} />
-        </CompanyCard>
+        <CompanyLogo key={index} src={company.logo} alt={company.name} />
       ))}
     </CompaniesContainer>
   );
