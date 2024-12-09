@@ -5,6 +5,8 @@ import python from '../assets/python.svg';
 import aws from '../assets/aws.svg';
 import nextjs from '../assets/nextjs.svg';
 import nodejs from '../assets/nodejs.svg';
+import bun from '../assets/bun.svg';
+
 
 const CompaniesContainer = styled.div`
   display: flex;
@@ -46,6 +48,10 @@ const Companies = () => {
     {
       name: "Node.js",
       logo: nodejs,
+    },
+    {
+      name: "Bun",
+      logo: bun,
     },
   ];
 
