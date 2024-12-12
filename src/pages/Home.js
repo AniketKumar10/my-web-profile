@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
-import "./Home.css";
 import Typewriter from "typewriter-effect";
+
+import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import Companies from "../components/company-card";
-import Certificate from "./certificate";
+import Certificates from "../components/Certificates"; // Import the new component
 
 const TYPEWRITER_STRINGS = [
   "Hi, I'm Aniket Kumar ",
@@ -79,6 +81,10 @@ const Home = () => {
 
       {/* Projects Section */}
       <section className="projects" id="projects" data-aos="fade-up">
+        <Certificates />
+        <a href="/certificate" className="btn btn-primary">
+          More 
+        </a>{" "}
         {/* <h2>My Projects</h2>
         <div className="project-list">
           <div className="project-item">
@@ -94,11 +100,7 @@ const Home = () => {
             <p>Description of project 3.</p>
           </div>
         </div> */}
-        
-        
-        
         {/* <Certificate/> */}
-
       </section>
 
       {/* Contact Section */}
