@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Certificate from './pages/certificate';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/certificate" element={<Certificate />} />
         </Routes>
         <Footer /> {/* Footer appears on all pages */}
       </div>

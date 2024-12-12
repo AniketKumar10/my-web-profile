@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Companies from "../components/company-card";
+import Certificate from "./certificate";
 
 const TYPEWRITER_STRINGS = [
   "Hi, I'm Aniket Kumar ",
@@ -49,8 +50,7 @@ const Home = () => {
           </h1>
 
           <p>Welcome to my personal portfolio website 📝</p>
-          <h3 className="sorry-warning">This website is currently under development, so I apologize in advance if it does not meet your expectations.</h3>
-          </div>
+        </div>
       </section>
 
       {/* About Me Section */}
@@ -79,7 +79,7 @@ const Home = () => {
 
       {/* Projects Section */}
       <section className="projects" id="projects" data-aos="fade-up">
-        <h2>My Projects</h2>
+        {/* <h2>My Projects</h2>
         <div className="project-list">
           <div className="project-item">
             <h3>Project 1</h3>
@@ -93,10 +93,14 @@ const Home = () => {
             <h3>Project 3</h3>
             <p>Description of project 3.</p>
           </div>
-        </div>
+        </div> */}
+        
+        
+        
+        {/* <Certificate/> */}
+
       </section>
 
-      {/* Contact Section */}
       {/* Contact Section */}
       <section className="contact" id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>
