@@ -8,8 +8,8 @@ import './Certificates.css';
 const certificatesData = [
   {
     image: Certificate1,
-    name: 'React Developer Certification',
-    description: 'Comprehensive certification in React development, demonstrating advanced skills in modern web technologies.'
+    name: 'Cyber Security',
+    description: 'Skills demonenstrating understanding about cybersecurity essentials ,rules and ethics'
   },
   {
     image: Certificate2,
