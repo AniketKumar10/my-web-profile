@@ -81,26 +81,13 @@ const Home = () => {
 
       {/* Projects Section */}
       <section className="projects" id="projects" data-aos="fade-up">
+        <h2>My Certificates</h2>
         <Certificates />
-        <a href="/certificate" className="btn btn-primary">
-          More 
-        </a>{" "}
-        {/* <h2>My Projects</h2>
-        <div className="project-list">
-          <div className="project-item">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-          </div>
-          <div className="project-item">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-          </div>
-          <div className="project-item">
-            <h3>Project 3</h3>
-            <p>Description of project 3.</p>
-          </div>
-        </div> */}
-        {/* <Certificate/> */}
+        <a href="/certificate"
+          className="btn btn-primary view-all-btn"
+          style={{ transition: "0.3s" }}>
+          View All
+        </a>
       </section>
 
       {/* Contact Section */}

@@ -115,6 +115,15 @@
   padding: 60px 10%; /* Add padding for spacing */
   background-color: hsl(270, 50%, 10%); /* Deep purple background */
   color: #ffffff; /* White text for readability */
+  position: relative;
+}
+
+.view-all-btn {
+  position: absolute;
+  top: 60px; /* Match the top padding of .projects */
+  right: 10%; /* Match the right padding of .projects */
+  margin-top: 20px;
+  z-index: 1;
 }
 
 .projects h2 {
