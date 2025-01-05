@@ -5,6 +5,11 @@ const Certificates = () => {
   // Sample data for certificates with PDF links
   const certificates = [
     {
+      name: 'Resume',
+      issueDate: 'up-to-date',
+      onlineLink: '/certificates/Resume.pdf', // Updated path
+    },
+    {
       name: 'Python Programming',
       issueDate: '03.06.2024',
       issuerOrg: 'pythoninstitute.org',
